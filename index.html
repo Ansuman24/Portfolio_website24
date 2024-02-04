@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link rel="shortcut icon" href="/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/f0b74a34f0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="/l1.png" class="logo" />  
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <!-- <li><a href="#services">Services</a></li> -->
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Software Developer And Electronics Enthusiast</p>
+          <h1>Hi, I'm <span>Ansuman Das</span><br />From India</h1>
+          <a href="/Ansuman_Das_Resume.pdf" target="_blank" class="btn btn2">Download CV</a>
+        </div>
+      </div>
+    </div>
+    <!-- --------About------------ -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col1">
+            <img src="/1.jpeg" alt="" />
+          </div>
+          <div class="about-col2">
+            <h1 class="subtitle">About Me</h1>
+            <p>
+              Hi! I’m Ansuman Das. I am passionate about electronics and telecommunication engineering, and I have completed two summer internships at the Defence Research and Development Organisation (DRDO), where I worked on projects related to packet switching and voice over IP (VoIP) technologies. I have acquired multiple certifications in data processing, software development, and Excel skills for business, and I have proficient knowledge of software tools such as MATLAB, C++, C, and System Verilog. I am currently pursuing my Bachelor of Technology degree in Electronics and Telecommunication Engineering from Veer Surendra Sai University of Technology, and I expect to graduate in 2024. My goal is to use my skills and knowledge to find solutions to challenges in the electronics and technology sector. <br> 
+              I’ve been working on my portfolio since long, but now it’s time to show the world what
+              I’ve got. And that’s why I’ve created this website—so you can see
+              my work so far and connect with me . If you’d like to learn more
+              about me, connect with me. You can also follow me on diferent
+              platforms as mentioned below.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Languages</span><br />
+                  Python, C/C++, HTML/CSS, System Verilog, MATLAB
+                </li>
+                <li><span>Frameworks</span><br />WordPress</li>
+                <li>
+                  <span>Developer Tools</span><br />
+                  Git,VS Code, Visual Studio, PyCharm
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2020-Current</span><br />Btech from Veer Surendra Sai
+                  University Of Technology
+                </li>
+                <li>
+                  <span>2017-2019</span><br />Intermediate from K.V No.1
+                  Balasore
+                </li>
+                <li>
+                  <span>2006-2017</span><br />Matriculation from K.V No.1
+                  Balasore
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Internship-2023</span><br />Proof & Experimental Establishment (PXE), DRDO
+                </li>
+                <li>
+                  <span>Internship-2022</span><br />INTEGRATED TEST RANGE(ITR), DRDO
+                </li>
+                <li><span>Event Management Lead</span><br />E-CELL, VSSUT</li>
+                <!-- <li><span>xyz</span><br />Web interfaces</li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------------services---------------- -->
+    <!-- <div id="services">
+      <div class="container">
+        <h1 class="subtitle">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+              expedita nostrum numquam cum.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>XYZ</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+              expedita nostrum numquam cum.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>XYZ</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+              expedita nostrum numquam cum.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- --------portfolio--------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="subtitle">My Works/Projects</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="/vote.png" alt="" />
+            <div class="layer">
+              <h3>Voting Machine</h3>
+              <p>
+                Polling by Electronic Voting Machine (EVM) is easy, safe and secure methodology that takes minimum of our time .In order to perform this mechanism, there were several phases in the design process such as designing a flow chart, algorithm and simultaneously the code is developed to implement & stimulate the logic. 
+              </p>
+              <a href="https://github.com/Ansuman24/Voting_Machine.git" target="_blank"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="/traffic.png" alt="" />
+            <div class="layer">
+              <h3>Traffic Light Controller</h3>
+              <p>
+                Traffic control is a challenging problem in many cities. This is due to the large number of vehicles and the high dynamics of the traffic system. Poor traffic systems are the big reason for accidents, time losses. In this method of approach, it will reduce the waiting time of the vehicles at traffic signals.Verilog designing is hardware descriptive language, the name itself suggest that it deals with the hardware designing and simulation. 
+              </p>
+              <a href="https://github.com/Ansuman24/Traffic_Light_Controller.git" target="_blank"
+                ><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="/voice.png" alt="" />
+            <div class="layer">
+              <h3>Voice Assistant</h3>
+              <p>
+                A Voice assistant is a user interface that takes the voice commands from the user and does the corresponding task. The task might be responding to the queries, connecting to the device, and doing the work specified by the user like opening google, etc. Here, we will be mimicking such a system using Python.
+              </p>
+              <a href="https://github.com/Ansuman24/Voice_Assistant.git" target="_blank"
+                ><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/Ansuman24?tab=repositories" target="_blank" class="btn"
+          >See More</a
+        >
+      </div>
+    </div>
+
+    <!-- --------Contact------------- -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="subtitle">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i> ansumandas.040@gmail.com
+            </p>
+            <p><i class="fa-sharp fa-solid fa-square-phone"></i>+91-8260061117</p>
+            <div class="social-icons">
+              <a href="https://instagram.com"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/ansumandas24"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/Ansuman24"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://twitter.com"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </div>
+            <a href="/Ansuman_Das_Resume.pdf" target="_blank" class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright ©️ Ansuman Das. All Rights Are Reserved</p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwfgXbGpo6UPgV3B5DM0TlMUgbyEjaVrert1uT4yy2CwI2_YCAI7fnoYIWNAvXnLknt/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Mesage sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
